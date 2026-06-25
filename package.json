@@ -1,0 +1,26 @@
+{
+  "name": "smart-recipe-generator",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+  "start": "expo start",
+  "android": "expo start --android",
+  "ios": "expo start --ios",
+  "web": "expo start --web"
+  },
+  "dependencies": {
+  "expo": "~52.0.0",
+  "expo-asset": "~11.0.1",
+  "expo-constants": "~17.0.0",
+  "expo-status-bar": "~2.0.1",
+  "react": "18.3.1",
+  "react-native": "0.76.0"
+  },
+  "devDependencies": {
+  "@types/react": "~18.3.3",
+  "@types/react-native": "~0.73.0",
+  "typescript": "~5.3.3"
+  }
+  }
+  

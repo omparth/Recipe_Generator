@@ -1,0 +1,18 @@
+{
+  "expo": {
+  "name": "Smart Ingredient Recipe Generator",
+  "slug": "recipe-generator",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "userInterfaceStyle": "light",
+  "ios": {
+  "supportsTabletMode": true,
+  "bundleIdentifier": "com.recipeai.app"
+  },
+  "android": {
+  "package": "com.recipeai.app",
+  "versionCode": 1
+  }
+  }
+  }
+  
