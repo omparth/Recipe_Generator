@@ -1,3 +1,6 @@
+For Quick Preview of app, Scan and download app from Here- https://expo.dev/accounts/omparth/projects/recipe-generator/builds/4c182073-03cb-40f1-92c6-f6535346d35d
+
+
 *Local Setup
 
 ---Prerequisites
