@@ -1,9 +1,7 @@
-//src/utils/parseRecipe.tsx
 import { Recipe } from '../types/recipe';
 
 export const parseRecipeResponse = (response: string): Recipe => {
   try {
-    // Remove markdown code fences if present
     let cleanedResponse = response.trim();
     
     if (cleanedResponse.startsWith('```json')) {
@@ -12,10 +10,8 @@ export const parseRecipeResponse = (response: string): Recipe => {
       cleanedResponse = cleanedResponse.replace(/^```\s*/, '').replace(/\s*```$/, '');
     }
 
-    // Parse the JSON
     const parsed = JSON.parse(cleanedResponse);
 
-    // Validate the structure
     if (!parsed.title || typeof parsed.title !== 'string') {
       throw new Error('Invalid recipe: missing or invalid title');
     }
@@ -28,7 +24,6 @@ export const parseRecipeResponse = (response: string): Recipe => {
       throw new Error('Invalid recipe: instructions must be an array');
     }
 
-    // Ensure all ingredients and instructions are strings
     const ingredients = parsed.ingredients.map((item: unknown) => String(item));
     const instructions = parsed.instructions.map((item: unknown) => String(item));
 
